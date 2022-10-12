@@ -9,26 +9,37 @@ import frame from "../../assets/img/Frame 2030.png";
 import group from "../../assets/img/Group 55798.png";
 import logout from "../../assets/img/logout.png";
 import { Link, useNavigate } from "react-router-dom";
-import { useDispatch } from "react-redux";
-import {routesTrue} from ""
+import { useDispatch, useSelector } from "react-redux";
+import { routesTrue } from "../../redux/RoutesSlice";
 
 function Login() {
   const [loginEmail, setLoginEmail] = useState("");
   const [loginPassword, setLoginPassword] = useState("");
   const [text, setText] = useState("");
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const users = useSelector((state) => state.users.users);
 
-
-  const btn = () => {};
-
+  const btn = () => {
+    const user = users.find(
+      (item) => item.email === loginEmail && item.password === loginPassword
+    );
+    if (user) {
+      dispatch(routesTrue());
+      navigate("/");
+    } else {
+      setText("Parol yoki email xato");
+    }
+  };
   return (
     <div className="login_page">
       <div className="reklama">
         <div className="women">
-          <img src={women} alt="" />
+          <img src={women} alt="..." />
         </div>
         <div className="frame">
-          <img src={frame} alt="" />
-          <img src={group} alt="" />
+          <img src={frame} alt="..." />
+          <img src={group} alt="..." />
         </div>
         <p>
           Объект индуцирует элементарный экситон. Поверхность, в согласии с
@@ -40,23 +51,23 @@ function Login() {
       <div className="login">
         <div className="login_left">
           <div className="car">
-            <img src={car} alt="" />
+            <img src={car} alt="..." />
             <p>История заказов</p>
           </div>
           <div className="love">
-            <img src={love} alt="" />
+            <img src={love} alt="..." />
             <p>Избранные товары</p>
           </div>
           <div className="user">
-            <img src={user} alt="" />
+            <img src={user} alt="..." />
             <p>Персональные данные</p>
           </div>
           <div className="key">
-            <img src={key} alt="" />
+            <img src={key} alt="..." />
             <p>Изменить пароль</p>
           </div>
           <div className="logout">
-            <img src={logout} alt="" />
+            <img src={logout} alt="..." />
             <p>Выход из аккаунта</p>
           </div>
         </div>
