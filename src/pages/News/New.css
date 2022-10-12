@@ -1,0 +1,63 @@
+.new {
+  color: white;
+}
+.new .h1 {
+  margin-left: 60px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.newBody {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 60px;
+  padding-right: 45px;
+  margin-bottom: 30px;
+}
+.newLeft {
+  background-image: url("../../assets/img/novos.png");
+  width: 60%;
+  height: 200px;
+  margin-right: 20px;
+}
+.newLeft h1 {
+  margin-top: 65px;
+  margin-left: 35px;
+}
+.newLeft p {
+  margin-top: 10px;
+  margin-left: 35px;
+}
+.newRight span {
+  color: gray;
+}
+.newRight .p {
+  display: inline-block;
+  font-size: 1.6rem;
+}
+.newRight {
+  width: 40%;
+  height: 200px;
+}
+.newRight p {
+  font-size: 1.15rem;
+}
+.News_dolor {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  width: 100%;
+  padding-left: 60px;
+  padding-top: 50px;
+}
+.carts {
+  width: 320px;
+  margin-bottom: 75px;
+}
+.carts img {
+  width: 320px;
+  height: 170px;
+}
+.carts h1 {
+  margin: 20px 0;
+  font-size: 1.5rem;
+}

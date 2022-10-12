@@ -1,0 +1,204 @@
+.productDetail .detalSlider .swiper-horizontal > .swiper-pagination-bullets,
+.productDetail
+  .detalSlider
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+  /* display: none !important; */
+}
+
+/* .swiper-wrapper{
+    width: 50% !important;
+} */
+
+.productDetail .detalSlider .swiper {
+  width: 600px !important;
+}
+
+.productDetail .detalSlider .swiper-slide img {
+  width: 600px !important;
+  border-radius: 10px;
+  /* max-width: 100% !important;  
+  height: 100% !important; */
+}
+
+.productDetailslider {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+/* ------------- */
+.productDetailslider .sum .image2 {
+  width: 709px;
+  height: 645px;
+  background: #222222;
+  border-radius: 15px;
+  padding: 49px 31px;
+}
+.productDetailslider .sum .money {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.productDetailslider .sum .money .price {
+  display: flex;
+  align-items: flex-end;
+}
+.productDetailslider .sum .money .price img {
+  margin-bottom: 10px;
+  margin-left: 11px;
+}
+.productDetailslider .sum .money h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 59px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+.productDetailslider .sum .money p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  text-decoration-line: line-through;
+  color: #b5b5b5;
+  margin-left: 12px;
+  margin-bottom: 10px;
+}
+.productDetailslider .sum .money b {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  color: #b5b5b5;
+}
+.productDetailslider .sum .money b span {
+  color: white;
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+.productDetailslider .cm h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #9c9c9c;
+}
+.productDetailslider .cm .sm {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 500px;
+}
+.productDetailslider .cm .sm b {
+  background: #f0f0f0;
+  border-radius: 15px;
+  width: 90px;
+  height: 44px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px 0;
+}
+.productDetailslider .minuspl h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #9c9c9c;
+  margin-bottom: 20px;
+}
+.productDetailslider .minuspl .btns {
+  display: flex;
+  align-items: center;
+}
+.productDetailslider .minuspl .btns button {
+  width: 38px;
+  height: 38px;
+  background: #f0f0f0;
+  border-radius: 15px;
+  border: none;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.productDetailslider .minuspl .btns span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+  margin: 0 10px;
+}
+.productDetailslider .sum .image2 > button {
+  background: #ffd704;
+  border-radius: 5px;
+  width: 222px;
+  height: 56px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 115.7%;
+  /* or 25px */
+  border: none;
+  color: #222222;
+  margin: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.productDetailslider .sum .image2 .descript {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.productDetailslider .sum .image2 .descript h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115.7%;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.productDetailslider .sum .image2 .descript h1 img {
+  margin-right: 15px;
+}
+.productDetailslider .sum .image2 .cards {
+  width: 648px;
+  height: 103px;
+  background: #f0f0f0;
+  border-radius: 15px;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 41px;
+}

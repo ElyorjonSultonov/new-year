@@ -1,0 +1,90 @@
+.chosenProduct {
+  height: 300px;
+  color: white;
+  background: #222222;
+  border-radius: 15px;
+  margin: 30px 30px 30px 0;
+  width: 966px;
+  display: flex;
+  border-radius: 5px;
+  height: 180px;
+  padding-right: 25px;
+}
+.chosenProduct img {
+  width: 210px;
+  height: 180px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+.chosenProduct .text h1 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  margin: 22px 0;
+}
+.chosenProduct .text .top {
+  display: flex;
+  align-items: center;
+}
+.chosenProduct .text .top button {
+  color: #ffffff;
+  font-size: 25px;
+  background: gold;
+  padding: 0 8px 4px;
+  border-radius: 5px;
+  border: none;
+  margin-left: 500px;
+  cursor: pointer;
+}
+.chosenProduct .text .top button:hover {
+  box-shadow: 2px 2px 2px rgb(255, 255, 255);
+}
+
+.chosenProduct .shtuk {
+  display: flex;
+  align-items: center;
+}
+.chosenProduct .shtuk h1 {
+  margin-right: 27px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-top: 0px;
+}
+.chosenProduct .shtuk span {
+  color: #b5b5b5;
+  font-size: 16px;
+  margin-right: 7px;
+}
+.chosenProduct .buttom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0px;
+}
+.chosenProduct .buttom .btns button {
+  width: 35px;
+  height: 35px;
+  background: #f0f0f0;
+  border-radius: 15px;
+  border: none;
+  font-size: 25px;
+  font-weight: 100;
+  font-style: normal;
+}
+.chosenProduct .buttom .btns span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 128.91%;
+  text-align: center;
+  color: #ffffff;
+  margin: 0 12px;
+}

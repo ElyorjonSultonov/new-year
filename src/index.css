@@ -1,0 +1,15 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Roboto";
+}
+body {
+  background-color: #000000;
+}
+.container {
+  max-width: 1400px;
+  margin: auto;
+}

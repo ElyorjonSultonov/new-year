@@ -1,0 +1,60 @@
+aside {
+  color: white;
+  /* padding-top: 30px; */
+  /* padding-left: 60px; */
+}
+aside h1 {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 43px;
+  color: #ffffff;
+  margin: 0px 0 35px;
+}
+aside h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 128.91%;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  margin: 25px 0;
+}
+aside p {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+aside input {
+  margin-right: 16px;
+}
+
+.css-1elwnq4-MuiPaper-root-MuiAccordion-root.Mui-expanded:first-of-type {
+  background: none !important;
+  margin-top: 0;
+}
+.css-1elwnq4-MuiPaper-root-MuiAccordion-root.Mui-expanded {
+  margin: 16px 0;
+  background: none !important;
+}
+.css-1elwnq4-MuiPaper-root-MuiAccordion-root:first-of-type {
+  background: none !important;
+  width: 100% !important;
+}
+.css-1elwnq4-MuiPaper-root-MuiAccordion-root {
+  background: none !important;
+  width: 100% !important;
+}
+
+.css-ahj2mt-MuiTypography-root {
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  line-height: 128.91% !important;
+  color: #ffffff !important;
+}
+
+.css-i4bv87-MuiSvgIcon-root {
+  color: #ffffff !important;
+}
+.css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root {
+  padding: 0 !important;
+}

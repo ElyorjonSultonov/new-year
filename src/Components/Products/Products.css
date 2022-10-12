@@ -1,0 +1,45 @@
+/* forGift div */
+.products .forGift {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-column-gap: 10px;
+}
+.products .forGift .forGiftBody img {
+  max-width: 100%;
+  width: 100%;
+}
+.products .forGift .forGiftBody p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  margin-top: 10px;
+}
+/* sale div */
+/* .sale .productMap {
+ 
+} */
+
+
+
+.sale .stock {
+  margin: 68px 0 33px;
+}
+.sale .stock {
+  display: flex;
+  align-items: center;
+}
+.sale .stock h1 {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 115.7%;
+  color: #ffffff;
+  margin-right: 30px;
+}
+
+.sale .mySwiper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-column-gap: 10px;
+}

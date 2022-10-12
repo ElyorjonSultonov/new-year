@@ -1,0 +1,62 @@
+.kontact {
+  background-color: #000;
+  width: 100%;
+  padding-bottom: 228px;
+}
+
+.kontact .text {
+  max-width: 1420px;
+  margin: auto;
+  text-align: left;
+}
+
+.kontact .text .topKon {
+  width: 410px;
+}
+.kontact .text .topKon p {
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 10px;
+}
+
+.kontact .text p svg {
+  margin: 0 10px;
+}
+.email {
+  margin-top: 40px;
+}
+h3 {
+  /* margin-top: 30px;
+  margin-bottom: 50px; */
+  text-align: left;
+  color: #fff;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 43px;
+}
+
+h4 {
+  margin-top: 66px;
+  margin-bottom: 31px;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 30px;
+  color: #fff;
+}
+
+p {
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+.svg .right svg {
+  margin: 0 20px;
+}
+.svg .right .tlgr svg {
+  margin-left: 0;
+}
+
+hr {
+  background: none;
+  color: #fff;
+}

@@ -1,0 +1,98 @@
+.dFlex {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+/* .basket {
+  margin-top: 30px;
+} */
+.basket .bas_right {
+  background: #f0f0f0;
+  border-radius: 15px;
+  height: 400px;
+  width: 380px;
+  margin: 30px 0;
+}
+.basket .bas_right .top {
+  background: #222222;
+  border-radius: 15px;
+  height: 289px;
+}
+.basket .bas_right > button {
+  background: #ffd704;
+  border-radius: 5px;
+  width: 348px;
+  height: 49px;
+  margin: 23px 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  box-shadow: 3px 3px 3px white;
+}
+.basket .bas_right > button:hover {
+  box-shadow: 3px 3px 3px rgb(190, 162, 0);
+  color: #ffffff;
+}
+
+.basket .bas_right .top {
+  padding: 25px;
+}
+.basket .bas_right .top .itogo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 27px;
+}
+.basket .bas_right .top .itogo h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 128.91%;
+  color: #ffffff;
+  margin-right: 16px;
+}
+.basket .bas_right .top .itogo h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 128.91%;
+  color: #ff2727;
+  margin-right: 14px;
+}
+.basket .bas_right .top .itogo p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration-line: line-through;
+  color: #b5b5b5;
+  margin-right: 56px;
+}
+.basket .bas_right .top > h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #b5b5b5;
+  margin-bottom: 21px;
+}
+.basket .bas_right .top .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.basket .bas_right .top h4 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #7c7c7c;
+}
+.basket .bas_right .top h5 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 128.91%;
+  color: #ffffff;
+}

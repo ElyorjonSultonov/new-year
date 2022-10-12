@@ -1,0 +1,51 @@
+.maskGroup {
+  margin: 60px 0;
+  border-top: 3px solid #ffffff;
+}
+.maskGroup img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.maskGroup .container {
+  position: relative;
+  margin-top: 60px;
+}
+.maskGroup .maskBody {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.maskGroup .maskBody .newBtn {
+  display: flex;
+  align-items: center;
+}
+.maskGroup .maskBody .newBtn h1 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 115.7%;
+  color: #ffffff;
+  margin-right: 15px;
+}
+.maskGroup .maskBody p {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 129.2%;
+  letter-spacing: 0.015em;
+  color: #ffffff;
+  margin: 15px 0 25px;
+}
+.maskGroup .maskBody button {
+  border: none;
+  background: #ffd704;
+  border-radius: 8px;
+  padding: 15px 25px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.maskGroup .maskBody button .telegram {
+  margin-left: 20px;
+  font-size: 20px;
+}
