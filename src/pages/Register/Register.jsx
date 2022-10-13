@@ -32,6 +32,10 @@ function Register() {
           внешние воздействия, гомогенно испускает объект.
         </p>
         <h1>Личный кабинет</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum,
+          similique.
+        </p>
       </div>
       <div className="login">
         <div className="login_left">
