@@ -4,9 +4,9 @@ const initialState = {
 };
 
 const routesSlice = createSlice({
-  name: "users",
+  name: "routes",
   initialState,
-  reducer: {
+  reducers: {
     routesTrue: (state) => {
       state.routes = true;
     },

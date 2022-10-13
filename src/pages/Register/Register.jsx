@@ -1,21 +1,43 @@
-import React, { useState } from "react";
-import "./Register.css";
-import car from "../../assets/img/car.png";
-import love from "../../assets/img/love.png";
-import users from "../../assets/img/user.png";
-import key from "../../assets/img/Key.png";
-import women from "../../assets/img/Ellipse 125.png";
-import frame from "../../assets/img/Frame 2030.png";
-import group from "../../assets/img/Group 55798.png";
-import logout from "../../assets/img/logout.png";
+import React, { useState } from 'react'
+import './Register.css'
+import car from '../../assets/img/car.png'
+import love from '../../assets/img/love.png'
+import users from '../../assets/img/user.png'
+import key from '../../assets/img/Key.png'
+import women from '../../assets/img/Ellipse 125.png'
+import frame from '../../assets/img/Frame 2030.png'
+import group from '../../assets/img/Group 55798.png'
+import logout from '../../assets/img/logout.png'
+import { useNavigate } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
+import { addUsers } from '../../redux/UsersSlice'
 
 function Register() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [text, setText] = useState("");
-  const [password, setPassword] = useState("");
-  const btn = () => {};
-
+  const navigate = useNavigate()
+  const dispatch = useDispatch()
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  const [text, setText] = useState('')
+  const regBtn = (e) => {
+    e.preventDefault()
+    if (!name) {
+      setText('Ism kiriting')
+    } else if (!email) {
+      setText('Email kiriting')
+    } else if (!password) {
+      setText('Email kiriting')
+    } else {
+      setText('')
+      const newUsers = {
+        name,
+        email,
+        password,
+      }
+      dispatch(addUsers(newUsers))
+      navigate('/login')
+    }
+  }
   return (
     <div className="login_page">
       <div className="reklama">
@@ -32,10 +54,6 @@ function Register() {
           внешние воздействия, гомогенно испускает объект.
         </p>
         <h1>Личный кабинет</h1>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum,
-          similique.
-        </p>
       </div>
       <div className="login">
         <div className="login_left">
@@ -61,28 +79,30 @@ function Register() {
           </div>
         </div>
         <div className="login_right">
-          <h1>Register</h1>
-          <input
-            type="text"
-            placeholder="Name"
-            onChange={(e) => setName(e.target.value)}
-          />
-          <input
-            type="email"
-            placeholder="Email"
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <input
-            type="password"
-            placeholder="password"
-            onChange={(e) => setPassword(e.target.value)}
-          />
-          <button onClick={btn}>Login</button>
+          <form action="">
+            <h1>Register</h1>
+            <input
+              type="text"
+              placeholder="Name"
+              onChange={(e) => setName(e.target.value)}
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <input
+              type="password"
+              placeholder="password"
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            <button onClick={regBtn}>Submit</button>
+          </form>
           <h2>{text}</h2>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default Register;
+export default Register

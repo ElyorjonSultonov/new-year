@@ -1,36 +1,37 @@
-import React, { useState } from "react";
-import "./Login.css";
-import car from "../../assets/img/car.png";
-import love from "../../assets/img/love.png";
-import user from "../../assets/img/user.png";
-import key from "../../assets/img/Key.png";
-import women from "../../assets/img/Ellipse 125.png";
-import frame from "../../assets/img/Frame 2030.png";
-import group from "../../assets/img/Group 55798.png";
-import logout from "../../assets/img/logout.png";
-import { Link, useNavigate } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
-import { routesTrue } from "../../redux/RoutesSlice";
+import React, { useState } from 'react'
+import './Login.css'
+import car from '../../assets/img/car.png'
+import love from '../../assets/img/love.png'
+import user from '../../assets/img/user.png'
+import key from '../../assets/img/Key.png'
+import women from '../../assets/img/Ellipse 125.png'
+import frame from '../../assets/img/Frame 2030.png'
+import group from '../../assets/img/Group 55798.png'
+import logout from '../../assets/img/logout.png'
+import { Link, useNavigate } from 'react-router-dom'
+import { useDispatch, useSelector } from 'react-redux'
+import { routesTrue } from '../../redux/RoutesSlice'
 
 function Login() {
-  const [loginEmail, setLoginEmail] = useState("");
-  const [loginPassword, setLoginPassword] = useState("");
-  const [text, setText] = useState("");
-  const dispatch = useDispatch();
-  const navigate = useNavigate();
-  const users = useSelector((state) => state.users.users);
-
-  const btn = () => {
+  const [loginEmail, setLoginEmail] = useState('')
+  const [loginPassword, setLoginPassword] = useState('')
+  const [text, setText] = useState('')
+  const dispatch = useDispatch()
+  const navigate = useNavigate()
+  const users = useSelector((state) => state.users.users)
+  console.log(users)
+  const logBtn = (e) => {
+    e.preventDefault()
     const user = users.find(
-      (item) => item.email === loginEmail && item.password === loginPassword
-    );
+      (item) => item.email === loginEmail && item.password === loginPassword,
+    )
     if (user) {
-      dispatch(routesTrue());
-      navigate("/");
+      dispatch(routesTrue())
+      navigate('/')
     } else {
-      setText("Parol yoki email xato");
+      setText('Parol yoki email xato')
     }
-  };
+  }
   return (
     <div className="login_page">
       <div className="reklama">
@@ -72,26 +73,28 @@ function Login() {
           </div>
         </div>
         <div className="login_right">
-          <h1>Login</h1>
-          <input
-            type="email"
-            placeholder="Email"
-            onChange={(e) => setLoginEmail(e.target.value)}
-          />
-          <input
-            type="password"
-            placeholder="password"
-            onChange={(e) => setLoginPassword(e.target.value)}
-          />
-          <button onClick={btn}>Tastiq</button>
-          <h2>{text}</h2>
-          <Link className="link" to={"/register"}>
-            Register page
-          </Link>
+          <form action="">
+            <h1>Login</h1>
+            <input
+              type="email"
+              placeholder="Email"
+              onChange={(e) => setLoginEmail(e.target.value)}
+            />
+            <input
+              type="password"
+              placeholder="password"
+              onChange={(e) => setLoginPassword(e.target.value)}
+            />
+            <button onClick={logBtn}>Submit</button>
+            <h2>{text}</h2>
+            <Link className="link" to={'/register'}>
+              Register page
+            </Link>
+          </form>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default Login;
+export default Login
